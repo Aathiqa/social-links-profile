@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --LimeGreen: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey1: hsl(0, 0%, 20%);
+    --Grey2: hsl(0, 0%, 12%);
+    --Grey3: hsl(0, 0%, 8%);
+}
+
+
+body {
+    background-color: var(--Grey3);
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.avatar {
+    border-radius: 100px;
+    height: 80px;
+    width: auto;
+    position: absolute;
+    top: 80px;
+    z-index: 1;
+}
+
+.card {
+    background-color: var(--Grey2);
+    height: 375px;
+    width: 300px;
+    padding: 20px;
+    padding-top: 120px;
+    border-radius: 10px;
+    position: relative;
+    top: 50px;
+}
+
+.name {
+    color: var(--White);
+    text-align: center;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.location {
+    color: var(--LimeGreen);
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.bio {
+    text-align: center;
+    color: var(--White);
+    font-size: 12px;
+    padding: 10px;
+    font-weight: 400;
+}
+
+li {
+    background-color: var(--Grey1);
+    color: var(--White);
+    margin: 10px;
+    margin-bottom: 12px;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    list-style-type: none;
+    border-radius: 7px;
+}
